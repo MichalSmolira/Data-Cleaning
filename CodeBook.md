@@ -1,2 +1,2 @@
-## Study design
+### Study design
 ### Code book
