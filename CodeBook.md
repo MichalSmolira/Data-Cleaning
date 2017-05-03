@@ -19,8 +19,11 @@ The following points describes how he Tidy Data Set was reached.
 	6. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.group by subject_id and activity_name and calculate mean valu for rest variables measurement.
 ### CODE BOOK
 name	data type	units
-subject_id	Categorical	
+
+subject_id	Categorical
+	
 activity_name	Categorical	
+
 tBodyAcc-mean()-X	Continuous	'g's (gravity of earth -> 9.80665 m/seg2).
 tBodyAcc-mean()-Y	Continuous	'g's (gravity of earth -> 9.80665 m/seg2).
 tBodyAcc-mean()-Z	Continuous	'g's (gravity of earth -> 9.80665 m/seg2).
