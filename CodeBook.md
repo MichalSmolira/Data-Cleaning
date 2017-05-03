@@ -18,12 +18,9 @@ The following points describes how he Tidy Data Set was reached.
 	5. Merges the training and the test sets to create one data set.
 	6. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.group by subject_id and activity_name and calculate mean valu for rest variables measurement.
 ### CODE BOOK
-name	data type	units
-
+name	data_type	units<br />
 subject_id	Categorical
-	
 activity_name	Categorical	
-
 tBodyAcc-mean()-X	Continuous	'g's (gravity of earth -> 9.80665 m/seg2).
 
 tBodyAcc-mean()-Y	Continuous	'g's (gravity of earth -> 9.80665 m/seg2).
@@ -66,14 +63,22 @@ tBodyGyro-mean()-Y	Continuous	rad/seg.
 
 tBodyGyro-mean()-Z	Continuous	rad/seg.
 
-tBodyGyro-std()-X	Continuous	rad/seg.
+tBodyGyro-std()-X	Continuous	
+
 tBodyGyro-std()-Y	Continuous	rad/seg.
+
 tBodyGyro-std()-Z	Continuous	rad/seg.
+
 tBodyGyroJerk-mean()-X	Continuous	rad/seg.
+
 tBodyGyroJerk-mean()-Y	Continuous	rad/seg.
+
 tBodyGyroJerk-mean()-Z	Continuous	rad/seg.
+
 tBodyGyroJerk-std()-X	Continuous	rad/seg.
+
 tBodyGyroJerk-std()-Y	Continuous	rad/seg.
+
 tBodyGyroJerk-std()-Z	Continuous	rad/seg.
 tBodyAccMag-mean()	Continuous	'g's (gravity of earth -> 9.80665 m/seg2).
 tBodyAccMag-std()	Continuous	'g's (gravity of earth -> 9.80665 m/seg2).
