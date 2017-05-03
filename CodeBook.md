@@ -10,6 +10,7 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 
 ### Outcome Data Set Information
 The following points describes how he Tidy Data Set was reached.
+
 	1. Bind activity_labels to test and train data set
 	2. Extracts only the measurements on the mean and standard deviation for each measurement.
 ### CODE BOOK
