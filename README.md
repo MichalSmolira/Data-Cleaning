@@ -4,7 +4,6 @@
 3. Run the script run_analysis.R.
 4. The outcome will be export to a file tidyDataSet.txt in your working directory.
 # run_analysis.R
-The script run_analysis.R 
 1. merg two data sets X_train and X_test. 
 2. Add information about acctivity name and subcject_id.
 3. Leaves only measurementsfor mean() and std() (standard deviation).
