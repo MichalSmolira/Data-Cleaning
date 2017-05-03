@@ -25,26 +25,47 @@ subject_id	Categorical
 activity_name	Categorical	
 
 tBodyAcc-mean()-X	Continuous	'g's (gravity of earth -> 9.80665 m/seg2).
+
 tBodyAcc-mean()-Y	Continuous	'g's (gravity of earth -> 9.80665 m/seg2).
+
 tBodyAcc-mean()-Z	Continuous	'g's (gravity of earth -> 9.80665 m/seg2).
+
 tBodyAcc-std()-X	Continuous	'g's (gravity of earth -> 9.80665 m/seg2).
+
 tBodyAcc-std()-Y	Continuous	'g's (gravity of earth -> 9.80665 m/seg2).
+
 tBodyAcc-std()-Z	Continuous	'g's (gravity of earth -> 9.80665 m/seg2).
+
 tGravityAcc-mean()-X	Continuous	'g's (gravity of earth -> 9.80665 m/seg2).
+
 tGravityAcc-mean()-Y	Continuous	'g's (gravity of earth -> 9.80665 m/seg2).
+
 tGravityAcc-mean()-Z	Continuous	'g's (gravity of earth -> 9.80665 m/seg2).
+
 tGravityAcc-std()-X	Continuous	'g's (gravity of earth -> 9.80665 m/seg2).
+
 tGravityAcc-std()-Y	Continuous	'g's (gravity of earth -> 9.80665 m/seg2).
+
 tGravityAcc-std()-Z	Continuous	'g's (gravity of earth -> 9.80665 m/seg2).
+
 tBodyAccJerk-mean()-X	Continuous	'g's (gravity of earth -> 9.80665 m/seg2).
+
 tBodyAccJerk-mean()-Y	Continuous	'g's (gravity of earth -> 9.80665 m/seg2).
+
 tBodyAccJerk-mean()-Z	Continuous	'g's (gravity of earth -> 9.80665 m/seg2).
+
 tBodyAccJerk-std()-X	Continuous	'g's (gravity of earth -> 9.80665 m/seg2).
+
 tBodyAccJerk-std()-Y	Continuous	'g's (gravity of earth -> 9.80665 m/seg2).
+
 tBodyAccJerk-std()-Z	Continuous	'g's (gravity of earth -> 9.80665 m/seg2).
+
 tBodyGyro-mean()-X	Continuous	rad/seg.
+
 tBodyGyro-mean()-Y	Continuous	rad/seg.
+
 tBodyGyro-mean()-Z	Continuous	rad/seg.
+
 tBodyGyro-std()-X	Continuous	rad/seg.
 tBodyGyro-std()-Y	Continuous	rad/seg.
 tBodyGyro-std()-Z	Continuous	rad/seg.
