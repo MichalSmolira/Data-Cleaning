@@ -1,4 +1,8 @@
-# Run 
+# Files
+CodeBook.md -> Contains information about how the data was gain ,processed and describe all variabels with units
+run_analysis.R -> script in R that perform the analysis (detail in section below)
+tidyDataSet.txt-> The outcome of a run_analysis.R
+# To Run 
 1. Downlod data from the link https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip to your working directory.
 2. Unzpi the file.
 3. Run the script run_analysis.R.
