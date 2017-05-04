@@ -12,34 +12,44 @@
 
 #change names of columns 
   colnames(activity_labels)[2]<-"activity_name"
+  colnames(activity_labels)[1]<-"activity_id"
+  colnames(test_l)[1]<-"activity_id"
+  colnames(train_l)[1]<-"activity_id"
   colnames(subject_test)[1]<-"subject_id"
   colnames(subject_train)[1]<-"subject_id"
-
-# bind activity_labels to test_l and train_l data
-  train_l<-merge(train_l,activity_labels,by.x="V1",by.y="V1")
-  test_l<-merge(test_l,activity_labels,by.x="V1",by.y="V1")
+  
 
 #Extracts only the measurements on the mean and standard deviation for each measurement.
-  #create 2 vectors with columns contains mean( or std(
+#Create 2 vectors with columns contains mean( or std(
   c_meanstd<-grep("mean\\(|std\\(",features[,2])
   c_meanstd_value<-grep("mean\\(|std\\(",features[,2],value = TRUE)
-  #subset data sets usunig vector c_meanstd
+  
+#Subset data sets usunig vector c_meanstd
   test<-test[,c_meanstd]
   train<-train[,c_meanstd]
+  
 #Appropriately labels the data set with descriptive variable names using c_meanstd_value vector
   names(test)<-c_meanstd_value
   names(train)<-c_meanstd_value
-# Uses descriptive activity names to name the activities in the data set by binding activity name and subcject to test and train data set
-  test<-cbind(subject_test,test_l$activity_name,test)
-  train<-cbind(subject_train,train_l$activity_name,train)
-  colnames(test)[2]<-"activity_name"
-  colnames(train)[2]<-"activity_name"
+  
+# Bind activity_id and subject_id do test and train data
+  test<-cbind(subject_test,test_l,test)
+  train<-cbind(subject_train,train_l,train)
+  
 #Merges the training and the test sets to create one data set by row binding datasets
-  score<-rbind(test,train)
+  score<-rbind(test,train)  
+  
+#Add activity description
+  score<-merge(activity_labels,score,by.x="activity_id",by.y="activity_id")
+  
+#drop column activity_id
+  score$activity_id<-NULL
+
 #Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 #group by subject_id and activity_name and calculate mean valu for rest variables 
   score<-group_by(score,subject_id,activity_name)
   tidyDataSet<-summarise_all(score, mean)
+  
 #export data
   write.table(tidyDataSet,file='tidyDataSet.txt',row.name=FALSE)
   
